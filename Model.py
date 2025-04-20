@@ -1,5 +1,5 @@
 # Kvasir-SEG Polyp Segmentation - Cleaned Script
-# Author: [Your Name]
+# Author: Ameer Hamza
 # Description: U-Net with Attention & SE Blocks for Polyp Segmentation using TensorFlow and Kvasir-SEG Dataset
 
 
