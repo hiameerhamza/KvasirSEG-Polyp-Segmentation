@@ -12,23 +12,23 @@ Colorectal cancer is considered one of the deadliest diseases, contributing to a
 <br>
 ## 📁 Dataset Detail
 📸 [Kvasir-SEG Dataset](https://datasets.simula.no/kvasir-seg/)<br>
-- **Source:** Developed by Simula Research Laboratory, Norway.<br>
+- **Size:** 46.2 MB<br>
 - **Dataset Sizse:** 1,000<br>
 - **Resolution:** 332×487 to 1920×1072 pixels.<br>
 - **Annotation:** Manually annotated and verified by experts<br>
 - **Format:** JPEG images with 1-bit masks<br>
 - **Purpose:** Designed for training and evaluating polyp segmentation models.<br>
-- **Access:** Open-access for research and educational purposes.​​
+- **Access:** Open-access for research and educational purposes.​​<br>
+![KvasirSEG Result Diagram](/assets/1.jpg) **Figure 1:** Qualitative Results of Proposed Model on Kvasir-SEG dataset, (a): original image, (b): ground truth, (c): predicted mask
 ##
 📸 [CVC-ClinicBD dataset](https://universe.roboflow.com/teste-mhypc/cvc-clinicdb/)​
-- **Source:** Created by the Computer Vision Center (CVC), UAB, Spain, and Hospital Clinic Barcelona.<br>
 - **Content:** 612 colonoscopy frames, each with pixel-wise segmentation masks for polyp regions.<br>
 - **Resolution:** 384×288 pixels.<br>
 - **Annotation:** Each frame is annotated with a single polyp mask.<br>
 - **Format:** Images with corresponding segmentation masks.<br>
 - **Purpose:** Used for training and evaluating polyp detection and segmentation algorithms.<br>
 - **Access:** Publicly available for research purposes.<br>
-
+![CVC-ClinicDB Result Diagram](/assets/2a.jpg) **Figure 2:** Qualitative Results of Proposed Model on CVC-ClinicDB dataset, (a): original image, (b): ground truth, (c): predicted mask
 ## Use Cases <br>
 - Early colorectal cancer detection
 - Real-time polyp detection during colonoscopy
