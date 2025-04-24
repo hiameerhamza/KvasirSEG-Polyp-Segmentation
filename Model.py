@@ -199,16 +199,12 @@ def unet_model(input_size, filters, n_classes):
     C5 = encoding_block(D4,filters*16) #16 32
     D4=MaxPooling2D(pool_size=(2, 2))(C5)
     C6 = encoding_block(D4,filters*16)#8 16
-    D6=MaxPooling2D(pool_size=(2, 2))(C6)
-    C7 = encoding_block(C6,filters*64)#8 16
-    D7=MaxPooling2D(pool_size=(2, 2))(C7)
-    D7=resblock(D7,filters*64)
-    x=layers.Dropout(rate=0.5)(D7)
+    
+    
+    x=layers.Dropout(rate=0.5)(C6)
     #########################
-    x=mixBlock(C7,D7,256)
     x=mixBlock(x,C6,256)
     x=mixBlock(x,C5,64)
-    x=layers.Dropout(rate=0.9)(x)
     x=mixBlock(x,C4,32)
     x=mixBlock(x,C3,16)
     x=layers.Dropout(rate=0.5)(x)
